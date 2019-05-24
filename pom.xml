@@ -8,11 +8,13 @@
   <properties>
     <surefire-plugin.version>2.22.0</surefire-plugin.version>
     <quarkus.version>0.15.0</quarkus.version>
+
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <dependencyManagement>
+
     <dependencies>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -23,6 +25,8 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+
   <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -51,11 +55,24 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-h2</artifactId>
     </dependency>
-
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.199</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-jsonb</artifactId>
     </dependency>
+
+
+
+
+
+
+
+
   </dependencies>
   <build>
     <plugins>
